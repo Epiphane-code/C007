@@ -10,7 +10,7 @@ Résultat : banjaur
 */
 
 int main(){
-    int n;
+    int n=0;
     char chaine[27];
     char a, b;
     scanf("%s", chaine);
@@ -18,7 +18,12 @@ int main(){
     scanf("%c", &a);
     getchar();
     scanf("%c", &b);
-    for (int i = 0; i < 27; i++)
+    while (chaine[n] != '\0')
+    {
+        n++;
+    }
+    
+    for (int i = 0; i < n; i++)
     {
         if (chaine[i]==a)
         {
