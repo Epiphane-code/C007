@@ -10,3 +10,30 @@ piscine
 Les chaînes sont identiques.
 
 */
+
+int main(){
+    int n=0;
+    char chaine[27];
+    char chaine2[27];
+
+    scanf("%s", chaine);
+    getchar();
+    scanf("%s", chaine2);
+    getchar();
+
+
+    for (int i = 0; i < ; i++)
+    {
+        /* code */
+    }
+    
+
+   
+    
+    
+    
+    printf("Chaîne concaténée  : %s", resulta);
+
+    return 0;
+    
+}
