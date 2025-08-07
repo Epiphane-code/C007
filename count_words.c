@@ -11,7 +11,7 @@ Nombre de mots : 6
 int main() {
     char chaine[500];
     int count = 0;
-    fgets(chaine, sizeof(chaine), stdin);
+    fgets(chaine, 500, stdin);
     for(int i = 0; chaine[i] != '\0'; i++) {
         // Vérifier si le caractère actuel est un espace
         if (chaine[i] == ' ') {
