@@ -1,4 +1,5 @@
 #include <stdio.h>
+// Accepté par Sorkho
 /*
   3. Comparer deux chaînes sans strcmp
 Lire deux chaînes et indiquer si elles sont égales ou non.
@@ -20,6 +21,7 @@ int main(){
     getchar();
     scanf("%s", chaine2);
     getchar();
+    
     // On suppose que les chaînes sont de même longueur et ne dépassent pas 26 caractères
 
     // Comparaison caractère par caractère

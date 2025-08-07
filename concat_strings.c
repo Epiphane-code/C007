@@ -28,6 +28,8 @@ int main(){
     while (chaine[i] != '\0')
     {
         resulta[i]= chaine[i];
+        printf("%c", resulta[i]);
+        resulta[i+1]='\0';
         i++;
     }
 
@@ -35,6 +37,8 @@ int main(){
      while (chaine2[j] != '\0')
     {
         resulta[i]=chaine2[j];
+        printf("%c", resulta[i]);
+        resulta[i+1]='\0';
         i++;
         j++;
     }
