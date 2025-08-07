@@ -12,13 +12,13 @@ int main() {
     char chaine[500];
     int count = 0;
     fgets(chaine, 500, stdin);
-    for(int i = 0; chaine[i] != '\0'; i++) {
-        // Vérifier si le caractère actuel est un espace
-        if (chaine[i] == ' ') {
+    for(int i = 0 ; chaine[i] != '\0'; i++) {
+        if (i > 0 && (chaine[i] == ' ' || chaine[i] == '\n')&& chaine[i-1] != ' ') {
             count++;
         }
 
     }
-    printf("Nombre de mots : %d\n", count + 1); // Ajouter 1 pour le dernier mot
+    
+    printf("Nombre de mots : %d\n", count); // Ajouter 1 pour le dernier mot
     return 0;
 }
