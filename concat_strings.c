@@ -1,5 +1,6 @@
 #include <stdio.h>
 /*
+Accepté par Sorkho
 2. Concaténer deux chaînes sans strcat
 Lire deux chaînes et afficher la résultante de leur concaténation.
 Objectif : copier une chaîne après une autre manuellement.
