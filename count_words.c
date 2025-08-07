@@ -19,6 +19,6 @@ int main() {
 
     }
     
-    printf("Nombre de mots : %d\n", count); // Ajouter 1 pour le dernier mot
+    printf("Nombre des mots : %d\n", count);
     return 0;
 }
