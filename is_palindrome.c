@@ -15,7 +15,11 @@ int main(){
     fgets(chaine, 500, stdin);
     // Enlever le caractère de nouvelle ligne si présent
     chaine[strcspn(chaine,"\n")] = '\0';
-    int length = strlen(chaine);
+
+    int length = 0;
+    for (i = 0; chaine[i] != '\0'; i++) {
+        length++;
+    }
     for( i = 0, j = length - 1; i < j; i++, j--){
 
         if (chaine[i] != chaine[j]){
