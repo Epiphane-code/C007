@@ -10,13 +10,23 @@ Nombre de mots : 6
 */
 int main() {
     char chaine[500];
-    int count = 0;
-    fgets(chaine, 500, stdin);
-    for(int i = 0 ; chaine[i] != '\0'; i++) {
-        if (i > 0 && (chaine[i] == ' ' || chaine[i] == '\n')&& chaine[i-1] != ' ') {
+    int count;
+    scanf("%499[^'\n']", chaine);
+    for(int i = 0; chaine[i] != '\0'; i++){
+           if (chaine[i] == ' '){
+            count = 0;
+            }
+           else {
+            count = 1;
+           }
+        
+    }
+
+
+    for(int i = 1; chaine[i] != '\0'; i++) {
+        if (chaine[i] == ' ' && chaine[i-1] != ' ' ){
             count++;
         }
-
     }
     
     printf("Nombre de mots: %d\n", count);
