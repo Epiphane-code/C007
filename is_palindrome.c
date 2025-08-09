@@ -10,18 +10,11 @@ kayak
 La chaîne est un palindrom.
 */
 int main(){
-    char chaine[500];
+    char chaine[50];
     int i, j, verify = 1;
-    fgets(chaine, 500, stdin);
-    // Enlever le caractère de nouvelle ligne si présent
-    //chaine[strcspn(chaine,"\n")] = '\0';
-     for (i = 0; chaine[i] != '\0'; i++) {
-        if(chaine[i] == '\n'){
-            chaine[i] = '\0'; // Remplacer le caractère de nouvelle ligne par un terminateur de chaîne
-            break;
-        }
-    }
-
+    scanf("%49[^\n]", chaine); // Lire la chaîne jusqu'à la nouvelle ligne
+    getchar(); // Consommer le caractère de nouvelle ligne restant
+    // Calculer la longueur de la chaîne
     int length = 0;
     for (i = 0; chaine[i] != '\0'; i++) {
         length++;
