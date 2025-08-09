@@ -14,7 +14,13 @@ int main(){
     int i, j, verify = 1;
     fgets(chaine, 500, stdin);
     // Enlever le caractère de nouvelle ligne si présent
-    chaine[strcspn(chaine,"\n")] = '\0';
+    //chaine[strcspn(chaine,"\n")] = '\0';
+     for (i = 0; chaine[i] != '\0'; i++) {
+        if(chaine[i] == '\n'){
+            chaine[i] = '\0'; // Remplacer le caractère de nouvelle ligne par un terminateur de chaîne
+            break;
+        }
+    }
 
     int length = 0;
     for (i = 0; chaine[i] != '\0'; i++) {
@@ -26,7 +32,7 @@ int main(){
             verify = 0;
         }
     }
-    verify? printf("La chaîne est un palindrom") : printf("La chaiîe n'est pas un palindrome");
+    verify? printf("La chaîne est un palindrom") : printf("La chaiîe n'est pas un palindrom");
     return 0;
 
 }
