@@ -23,7 +23,7 @@ int main(){
         n++;
     }
     
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i <= n; i++)
     {
         if (chaine[i]==a)
         {
