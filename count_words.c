@@ -29,6 +29,6 @@ int main() {
         }
     }
     
-    printf("Nombre de mots: %d\n", count);
+    printf("Nombre de mots : %d\n", count);
     return 0;
 }
