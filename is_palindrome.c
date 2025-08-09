@@ -17,7 +17,6 @@ int main(){
     chaine[strcspn(chaine,"\n")] = '\0';
     int length = strlen(chaine);
     for( i = 0, j = length - 1; i < j; i++, j--){
-        printf("%c et %c; ", chaine[i], chaine[j]);
 
         if (chaine[i] != chaine[j]){
             verify = 0;
