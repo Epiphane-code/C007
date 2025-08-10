@@ -21,11 +21,16 @@ int main() {
            }
         
     }
+    getchar();
 
 
     for(int i = 1; chaine[i] != '\0'; i++) {
+        char v = chaine[i];
         if (chaine[i] == ' ' && chaine[i-1] != ' ' ){
             count++;
+        }
+        if (((v >= 33 && v <= 47) || (v >= 58 && v <= 64) || (v >= 91 && v <= 96) || (v >= 123 && v <= 126)) && chaine[i-1] == ' ' && (chaine[i+1] == ' ' || chaine[i+1] == '\0')){
+            count--;
         }
     }
     
